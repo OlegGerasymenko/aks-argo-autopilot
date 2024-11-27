@@ -19,6 +19,8 @@ spec:
         spec:
           destination: {}
           project: ""
+          source:
+            repoURL: ""
   syncPolicy:
     preserveResourcesOnDeletion: true
   template:
