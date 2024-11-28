@@ -15,7 +15,7 @@ kind: Kustomization
 namespace: argocd
 resources:
 - https://github.com/OlegGerasymenko/argocd/manifests/ha/cluster-install?ref=v2.4.6
-
+- ingress.yaml
 
 patches:
   - path: argocd-server-deploy-command.yaml

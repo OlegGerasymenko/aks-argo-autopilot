@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx-int
   rules:
-    - host: argocd.deploy.govaris-internal.com
+    - host: argocd.dev.govaris-internal.com
       http:
         paths:
           - backend:
