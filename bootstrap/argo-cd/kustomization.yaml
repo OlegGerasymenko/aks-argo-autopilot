@@ -10,16 +10,12 @@ configMapGenerator:
           usernameSecret:
             key: git_username
             name: autopilot-secret
-        resource.customizations.health.networking.k8s.io_Ingress: |
-            hs = {}
-            hs.status = "Healthy"
-            return hs
     name: argocd-cm
 kind: Kustomization
 namespace: argocd
 resources:
-- https://github.com/OlegGerasymenko/argocd/manifests/ha/cluster-install?ref=v2.4.6
-- ingress.yaml
+  - https://github.com/OlegGerasymenko/argocd/manifests/ha/cluster-install?ref=v2.4.6
+  - ingress.yaml
 
 patches:
   - path: argocd-server-deploy-command.yaml
