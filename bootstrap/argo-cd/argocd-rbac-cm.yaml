@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-rbac-cm
+data:
+  # Make members of the officedepot/telos_admin_team team administrators
+  policy.csv: |
+      p, role:cloud-admin, clusters, *, *, allow
+      p, role:argo-wf, applications, sync, *, allow
+      p, role:argo-wf, applications, get, *, allow
+      p, role:argo-wf, projects, get, *, allow
+      p, role:bq, applications, *, *, allow
+      g, officedepot:Telos_Admin_Team, role:admin
+      g, officedepot:BuyerQuest, role:readonly
+      g, cloud-svc-account, role:cloud-admin
+      g, officedepot:Magnesium, role:readonly
+      g, argo-wf-svc-account, role:argo-wf
+      g, officedepot:BuyerQuest, role:bq
+      g, officedepot:Principal Engineers, role:readonly
