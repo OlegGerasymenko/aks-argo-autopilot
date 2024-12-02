@@ -8,7 +8,6 @@ images:
 resources:
 - https://github.com/OlegGerasymenko/argocd/manifests/ha/cluster-install?ref=v2.4.6
 - ingress.yaml
-- argocd-image-updater.yaml
 
 patches:
   - path: argocd-server-deploy-command.yaml
