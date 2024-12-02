@@ -35,7 +35,7 @@ configMapGenerator:
           id: github
           name: GitHub
           config:
-            clientID: f3a8b1c275184038ef75
+            clientID: Ov23lirKnVtloaAVG5aa
             clientSecret: $github-sso-secret:dex.github.clientSecret
             orgs:
              - name: officedepot
