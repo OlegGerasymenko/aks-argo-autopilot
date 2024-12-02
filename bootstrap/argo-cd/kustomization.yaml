@@ -37,6 +37,7 @@ configMapGenerator:
           config:
             clientID: Ov23lirKnVtloaAVG5aa
             clientSecret: $github-sso-secret:dex.github.clientSecret
+            redirectURI: https://argocd.dev.govaris-internal.com/auth/callback
             orgs:
              - name: go-varis
        expiry:
