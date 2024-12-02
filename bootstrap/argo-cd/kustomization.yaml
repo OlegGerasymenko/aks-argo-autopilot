@@ -38,7 +38,7 @@ configMapGenerator:
             clientID: Ov23lirKnVtloaAVG5aa
             clientSecret: $github-sso-secret:dex.github.clientSecret
             orgs:
-             - name: go-varis
+             - name: OlegGerasymenko
        expiry:
          idTokens: "4h"
     - resource.customizations.health.networking.k8s.io_Ingress=
