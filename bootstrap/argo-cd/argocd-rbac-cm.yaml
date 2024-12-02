@@ -17,3 +17,4 @@ data:
       g, argo-wf-svc-account, role:argo-wf
       g, officedepot:BuyerQuest, role:bq
       g, officedepot:Principal Engineers, role:readonly
+      g, OlegGerasymenko, role:admin
