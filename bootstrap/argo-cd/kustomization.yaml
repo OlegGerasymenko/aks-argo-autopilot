@@ -20,7 +20,7 @@ configMapGenerator:
   - behavior: merge
     name: argocd-cm
     literals:
-    - url=https://argocd.dev.govaris-internal.com/
+    - url=https://argocd.dev.govaris-internal.com
     - |
       repository.credentials=- passwordSecret:
           key: git_token
