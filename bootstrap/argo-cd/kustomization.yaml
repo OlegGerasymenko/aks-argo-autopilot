@@ -39,7 +39,7 @@ configMapGenerator:
             clientSecret: $github-sso-secret:dex.github.clientSecret
             redirectURI: https://argocd.dev.govaris-internal.com/auth/callback
             orgs:
-             - name: go-varis
+             - name: OlegGerasymenko
        expiry:
          idTokens: "4h"
     - resource.customizations.health.networking.k8s.io_Ingress=
